@@ -1,4 +1,4 @@
-{ "homepage": "http://cinemascope.github.io/",
+{ "homepage": "https://dude0777.github.io/cinemascope",
   "name": "movies-db",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.55.0",
